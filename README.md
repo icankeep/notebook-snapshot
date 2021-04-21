@@ -28,3 +28,14 @@ version message信息放在{notebook_name}/version_info.json
   "2021-04-11-14:27:33": "version2: update",
 }
 ```
+
+## Notebook Snapshot 
+提供Notebook文件的快照功能，可以查看每个快照版本之间的diff信息
+
+支持本地、S3、OSS2等存储
+
+## TODO
+- [x] LocalFileManager
+- [ ] SnapshotManager
+- [ ] Jupyter Lab diff extension
+- [ ] S3FileManager

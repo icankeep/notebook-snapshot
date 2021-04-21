@@ -49,7 +49,7 @@ class LocalFileManager(FileManager, FileManagerMixin):
 
     @default('root_dir')
     def _default_root_dir(self):
-        return os.path.join(os.getcwd(), '.snapshot')
+        return os.getcwd()
 
     def validate_notebook_model(self, model):
         """Add failed-validation message to model"""
