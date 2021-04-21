@@ -2,8 +2,10 @@ import shutil
 import os
 
 import nbformat
-from traitlets import Type
+from traitlets import Type, default
 from traitlets.config.configurable import LoggingConfigurable
+
+from .filemanager import LocalFileManager
 
 
 class SnapshotManager(LoggingConfigurable):
